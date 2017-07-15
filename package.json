@@ -1,6 +1,6 @@
 {
   "name": "get-html-rows-cells",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple nodejs function for generating divs with cells as HTML with data-cell-id and data-row-id set.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gitub.com/diversen/get-html-rows-cells"
+    "url": "https://github.com/diversen/get-html-rows-cells"
   },
   "keywords": [
     "template",
