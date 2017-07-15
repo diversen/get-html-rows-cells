@@ -1,0 +1,20 @@
+{
+  "name": "get-html-rows-cells",
+  "version": "1.0.0",
+  "description": "Get number of rows with number of cells as HTML. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitub.com/diversen/get-html-rows-cells"
+  },
+  "keywords": [
+    "template",
+    "rows",
+    "cells"
+  ],
+  "author": "dennis iversen",
+  "license": "MIT"
+}
