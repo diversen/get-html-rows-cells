@@ -1,7 +1,7 @@
 {
   "name": "get-html-rows-cells",
   "version": "1.0.0",
-  "description": "Get number of rows with number of cells as HTML. ",
+  "description": "Simple nodejs function for generating divs with cells as HTML with data-cell-id and data-row-id set.",
   "main": "index.js",
   "scripts": {
     "test": "test.js"
