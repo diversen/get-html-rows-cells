@@ -12,7 +12,7 @@ See [index.js](index.js)
 
 # Usage
 
-    var getRowsCells = require('get-html-rows-cell');
+    var getRowsCells = require('get-html-rows-cells');
     console.log(getRowsCells(1, 2); // One row and two cells
     // => <div class="row" data-id="0"><span class="cell" data-row-id="0" data-cell-id="0"></span><span class="cell" data-row-id="0" data-cell-id="1"></span></div>
 
