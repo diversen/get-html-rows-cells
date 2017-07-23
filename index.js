@@ -1,19 +1,28 @@
-function getHTMLRowsCells(numRows, numCells) {
+function getHTMLRowsCells(numRows, numCells, div, span) {
+    
     var str = '';
+    
+    if (!div) div = 'span';
+    if (!span) span ='span';
+    
+    
     for (rowID = 0; rowID < numRows; rowID++) {
-        str += `<div class="row" data-id="${rowID}">`;
-        str += getCells(rowID, numCells);
-        str += `</div>`;
+        str += `<${div} class="row" data-id="${rowID}">`;
+        str += getCells(rowID, numCells, span);
+        str += `</${div}>`;
     }
     return str;
 }
 
-function getCells(rowID, numCells) {
+function getCells(rowID, numCells, span) {
     var str = '';
     for (c = 0; c < numCells; c++) {
-        str += `<span class="cell" data-row-id="${rowID}" data-cell-id="${c}"></span>`;
+        str += `<${span} class="cell" data-row-id="${rowID}" data-cell-id="${c}"></${span}>`;
     }
     return str;
 }
+
+
+
 
 module.exports = getHTMLRowsCells;
