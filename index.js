@@ -6,7 +6,7 @@ function getHTMLRowsCells(numRows, numCells, div, span) {
     if (!span) span ='span';
     
     
-    for (rowID = 0; rowID < numRows; rowID++) {
+    for (let rowID = 0; rowID < numRows; rowID++) {
         str += `<${div} class="row" data-id="${rowID}">`;
         str += getCells(rowID, numCells, span);
         str += `</${div}>`;
@@ -16,7 +16,7 @@ function getHTMLRowsCells(numRows, numCells, div, span) {
 
 function getCells(rowID, numCells, span) {
     var str = '';
-    for (c = 0; c < numCells; c++) {
+    for (let c = 0; c < numCells; c++) {
         str += `<${span} class="cell" data-row-id="${rowID}" data-cell-id="${c}"></${span}>`;
     }
     return str;
